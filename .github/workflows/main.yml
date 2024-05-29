@@ -65,7 +65,7 @@ jobs:
       - uses: game-ci/unity-builder@v2.1.2
         id: buildApk
         with:
-          androidVersionCode: 2
+          androidVersionCode: 3
           buildName: ${{ env.APP_NAME }}
           androidAppBundle: false
           androidKeystoreName: user.keystore
@@ -110,7 +110,7 @@ jobs:
           
       - uses: game-ci/unity-builder@v2.1.2
         with:
-          androidVersionCode: 2
+          androidVersionCode: 3
           buildName: ${{ env.APP_NAME }}
           androidAppBundle: true
           androidKeystoreName: user.keystore
