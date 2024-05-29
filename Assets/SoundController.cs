@@ -16,20 +16,10 @@ public class SoundController : MonoBehaviour
         AudioListener.pause = !isSoundOn;
     }
 
-    public void ToggleSoundOn()
+    public void ToggleSound()
     {
         // Invert the current sound state
-        isSoundOn = true;
-
-        // Update AudioListener and save the sound state
-        UpdateAudioListener();
-        SaveSoundState();
-    }
-
-    public void ToggleSoundOff()
-    {
-        // Invert the current sound state
-        isSoundOn = false;
+        isSoundOn = !isSoundOn;
 
         // Update AudioListener and save the sound state
         UpdateAudioListener();
